@@ -47,13 +47,17 @@ export default function App() {
         >
           <div className="flex  max-w-[200px] items-center gap-3 flex-1 ">
             <div className="w-2 h-2 rounded-full bg-blue-500 shrink-0"></div>
-            <li className="text-gray-700 flex-1 truncate pr-2">{i + 1} {t}</li>
+            <li className="flex text-gray-700 flex-1 truncate pr-2">{i + 1} {t}</li>
           </div>
           <button 
-            className="px-4 py-2 bg-linear-to-r from-red-500 to-rose-600 text-white text-sm font-medium rounded-lg hover:from-red-600 hover:to-rose-700 active:scale-95 transition-all duration-200 opacity-0 group-hover:opacity-100 shadow-sm" 
+            className="px-4 py-2 bg-linear-to-r from-red-500 to-rose-600 text-white text-sm font-medium rounded-lg hover:from-red-600 hover:to-rose-700 active:scale-sm transition-all duration-200 opacity-0 cursor-pointer group-hover:opacity-100 shadow-sm" 
             onClick={() => deleteItem(i)}
           >
             Remover
+          </button>
+          <button 
+          className="px-4 py-2 bg-linear-to-r from-green-400 to-green-600 text-white text-sm font-medium rounded-lg hover:from-green-500 hover:to-green-700 active:scale-sm transition-all duration-200 opacity-0 group-hover:opacity-100 shadow-sm">
+            Editar
           </button>
         </div>
       )}
